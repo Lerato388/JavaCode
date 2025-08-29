@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>UniConnect - Home page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar">
+    <div class="nav-left">
+      <i class="fas fa-home"></i>
+    </div>
+    <div class="nav-right">
+      <a href="LogoutServlet" class="logout">Logout</a>
+    </div>
+  </nav>
+  <div class="home-container">
+    <!-- Chat Area -->
+    <div class="chat-section">
+      <h2>Welcome to UniConnect</h2>
+      <div class="chat-box">
+        <p><strong>System:</strong> messages will appear...</p>
+      </div>
+      <form class="chat-form" action="ChatServlet" method="post">
+        <input type="text" name="message" placeholder="Type your message..." required>
+        <button type="submit">Send</button>
+      </form>
+    </div>
+    <div class="user-list">
+      <h3>Online Users</h3>
+      <ul>
+        <li>David Brooks</li>
+        <li>Sarah Johnson</li>
+        <li>Michael Lee</li>
+        <li>Amina Patel</li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>
+
